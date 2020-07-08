@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+    <p>{{ number }} shares of {{ name }} successfully bought @ {{price}} / share</p>
+    <a class="btn btn-outline-secondary btn" href="/buy" role="button">Buy More</a> <a class="btn btn-outline-secondary btn" href="/">Home</a>
+{% endblock %}

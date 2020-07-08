@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table style="width:80%">
+        <tr>
+            <th>Name of Stock</th>
+            <th>Symbol</th>
+            <th>Number of Shares</th>
+            <th>current price</th>
+            <th>Total Value</th>
+        </tr>
+        {% for i in range(0,leng) %}
+        <tr>
+            <td> {{ names[i] }}</td>
+            <td> {{ symbols[i] }}</td>
+            <td> {{ numbers[i] }}</td>
+            <td> {{ prices[i] }}</td>
+            <td> {{ values[i] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <table align="right" style="margin-right:200px">
+        <tr><td style="text-align: right">Total Cash: {{ cash }}</td></tr>
+        <tr><td  style="text-align: right">Grand Total: {{ sum }}</td></tr>
+    </table>
+
+{% endblock %}

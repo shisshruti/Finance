@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Trends
+{% endblock %}
+
+{% block main %}
+    <form id="frm1" action="/bgraph" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">
+        </div>
+        <button onclick="myFunction()" class="btn btn-primary">Get Current Trends</button>
+    </form>
+{% endblock %}
